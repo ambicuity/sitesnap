@@ -1,0 +1,46 @@
+name: "Feature request"
+description: Suggest an improvement to SiteSnap product behavior or repository automation
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Please check existing issues first.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What pain point are you trying to solve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should change?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - UX (popup/side panel)
+        - Capture reliability/performance
+        - Editor capabilities
+        - Export options
+        - Privacy/security model
+        - GitHub automation/workflows
+        - Documentation
+        - Other
+    validations:
+      required: true

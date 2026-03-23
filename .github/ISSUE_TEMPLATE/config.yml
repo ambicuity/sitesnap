@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability (private report)
+    url: mailto:contact@riteshrana.engineer
+    about: Please report security/privacy issues privately and do not open a public issue.
+  - name: General support
+    url: https://github.com/ambicuity/sitesnap/issues
+    about: For product bugs, feature requests, and workflow issues.

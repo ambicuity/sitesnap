@@ -1,0 +1,64 @@
+name: "Bug report"
+description: Report a bug in SiteSnap (extension UX, capture flow, editor, or GitHub automation)
+title: "[Bug]: "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug.
+
+        Before submitting:
+        1. Search existing issues to avoid duplicates.
+        2. If this is a security/privacy issue, email `contact@riteshrana.engineer` (do not post publicly).
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      options:
+        - Extension popup UI
+        - Side panel UI
+        - Capture pipeline (full-page/viewport)
+        - Editor tools (crop/blur/highlight/text)
+        - Export (PNG/PDF)
+        - Manifest/permissions/runtime behavior
+        - GitHub workflows/templates/docs
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe expected behavior vs actual behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open a page
+        2. Trigger SiteSnap from popup or side panel
+        3. Perform action
+        4. Observe problem
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: |
+        OS: macOS/Windows/Linux
+        Browser: Chrome version
+        Extension version/commit: 
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs/screenshots (optional)
+      description: Add console errors, stack traces, or screenshots if available.

@@ -1,0 +1,12 @@
+# SiteSnap is maintainer-owned.
+*                                  @ambicuity
+
+# Governance and automation
+.github/**                          @ambicuity
+scripts/update_contributors.sh      @ambicuity
+
+# Extension ownership boundaries
+manifest.json                       @ambicuity
+src/**                              @ambicuity
+public/**                           @ambicuity
+tests/**                            @ambicuity
